@@ -17,4 +17,6 @@ public class Order {
     private enum DeliveryType {
         COURIER, CASHDESK
     }
+
+
 }

@@ -3,6 +3,7 @@ package ru.mts.case_champ.delivery;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import ru.mts.case_champ.order.Order;
 
 @Slf4j
 @RestController
@@ -15,8 +16,8 @@ public class DeliveryController {
     }
 
     @PostMapping//если доставка курьером - true
-    public ResponseEntity<Object> saveDelivery(@RequestBody DeliveryDto deliveryDto) {
-        log.info("заказ зарегистрирован на доставку", deliveryDto);
-        return deliveryService.saveDelivery(deliveryDto);
+    public void saveDelivery(@RequestBody Order order) {
+        log.info("заказ зарегистрирован на доставку", order);
+        deliveryService.saveDelivery(order);
     }
 }

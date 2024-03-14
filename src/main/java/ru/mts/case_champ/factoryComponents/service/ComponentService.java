@@ -1,11 +1,11 @@
-package ru.mts.fintech.factoryComponents.service;
+package ru.mts.case_champ.factoryComponents.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.mts.fintech.factoryComponents.enums.ComponentEnum;
-import ru.mts.fintech.factoryComponents.jpa.ComponentJpa;
-import ru.mts.fintech.factoryComponents.thread.ComponentCreateThread;
+import ru.mts.case_champ.factoryComponents.enums.ComponentEnum;
+import ru.mts.case_champ.factoryComponents.jpa.ComponentJpa;
+import ru.mts.case_champ.factoryComponents.thread.ComponentCreateThread;
 
 @Service
 @Slf4j

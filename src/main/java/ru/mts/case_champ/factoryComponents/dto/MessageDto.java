@@ -1,4 +1,4 @@
-package ru.mts.fintech.factoryComponents.dto;
+package ru.mts.case_champ.factoryComponents.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

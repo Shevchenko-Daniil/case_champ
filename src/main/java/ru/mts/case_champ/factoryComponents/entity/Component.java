@@ -1,4 +1,4 @@
-package ru.mts.fintech.factoryComponents.entity;
+package ru.mts.case_champ.factoryComponents.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

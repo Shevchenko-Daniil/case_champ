@@ -1,9 +1,11 @@
-package ru.mts.fintech.factoryComponents.thread;
+package ru.mts.case_champ.factoryComponents.thread;
 
-import ru.mts.fintech.factoryComponents.entity.Component;
-import ru.mts.fintech.factoryComponents.enums.ComponentEnum;
-import ru.mts.fintech.factoryComponents.jpa.ComponentJpa;
+import lombok.extern.slf4j.Slf4j;
+import ru.mts.case_champ.factoryComponents.entity.Component;
+import ru.mts.case_champ.factoryComponents.enums.ComponentEnum;
+import ru.mts.case_champ.factoryComponents.jpa.ComponentJpa;
 
+@Slf4j
 public class ComponentCreateThread extends Thread {
 
     private final ComponentEnum componentEnum;
@@ -27,5 +29,6 @@ public class ComponentCreateThread extends Thread {
                 .orElse(new Component(componentEnum.getName(), 0));
         component.changeCount(count);
         componentJpa.save(component);
+        log.info(componentEnum.getName() + " успешно создан");
     }
 }

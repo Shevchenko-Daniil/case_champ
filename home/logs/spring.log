@@ -1,0 +1,28 @@
+2024-03-14T17:09:02.972+03:00  INFO 19116 --- [fintech] [main] ru.mts.case_champ.FintechApplication     : Starting FintechApplication using Java 17.0.10 with PID 19116 (Y:\Учеба\Обучение работа\JavaProjects\MTS\fintech\build\classes\java\main started by misha in Y:\Учеба\Обучение работа\JavaProjects\MTS\fintech)
+2024-03-14T17:09:02.978+03:00  INFO 19116 --- [fintech] [main] ru.mts.case_champ.FintechApplication     : No active profile set, falling back to 1 default profile: "default"
+2024-03-14T17:09:04.146+03:00  INFO 19116 --- [fintech] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-03-14T17:09:04.246+03:00  INFO 19116 --- [fintech] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 86 ms. Found 1 JPA repository interface.
+2024-03-14T17:09:05.323+03:00  INFO 19116 --- [fintech] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-03-14T17:09:05.339+03:00  INFO 19116 --- [fintech] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-03-14T17:09:05.340+03:00  INFO 19116 --- [fintech] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.19]
+2024-03-14T17:09:05.442+03:00  INFO 19116 --- [fintech] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-03-14T17:09:05.443+03:00  INFO 19116 --- [fintech] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2370 ms
+2024-03-14T17:09:05.709+03:00  INFO 19116 --- [fintech] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-03-14T17:09:05.807+03:00  INFO 19116 --- [fintech] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2024-03-14T17:09:05.869+03:00  INFO 19116 --- [fintech] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-03-14T17:09:06.268+03:00  INFO 19116 --- [fintech] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-03-14T17:09:06.307+03:00  INFO 19116 --- [fintech] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-03-14T17:09:06.591+03:00  INFO 19116 --- [fintech] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5f3b84bd
+2024-03-14T17:09:06.594+03:00  INFO 19116 --- [fintech] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-03-14T17:09:07.814+03:00  INFO 19116 --- [fintech] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-03-14T17:09:07.861+03:00  INFO 19116 --- [fintech] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-03-14T17:09:08.202+03:00  INFO 19116 --- [fintech] [main] f.a.AutowiredAnnotationBeanPostProcessor : Autowired annotation is not supported on static fields: static ru.mts.case_champ.factoryComponents.property.ComponentProperty ru.mts.case_champ.factoryComponents.enums.ComponentTimeStatis.componentProperty
+2024-03-14T17:09:08.253+03:00  WARN 19116 --- [fintech] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-03-14T17:09:09.118+03:00  INFO 19116 --- [fintech] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-03-14T17:09:09.131+03:00  INFO 19116 --- [fintech] [main] ru.mts.case_champ.FintechApplication     : Started FintechApplication in 6.812 seconds (process running for 7.306)
+2024-03-14T17:09:15.211+03:00  INFO 19116 --- [fintech] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-03-14T17:09:15.211+03:00  INFO 19116 --- [fintech] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-03-14T17:09:15.213+03:00  INFO 19116 --- [fintech] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2024-03-14T17:09:15.311+03:00  INFO 19116 --- [fintech] [http-nio-8080-exec-1] r.m.c.f.controller.ComponentController   : create TESTO, count: 10
+2024-03-14T17:09:15.313+03:00  INFO 19116 --- [fintech] [http-nio-8080-exec-1] r.m.c.f.service.ComponentService         : Продукт testo успешно создан в количестве 10шт
+2024-03-14T17:09:15.550+03:00  INFO 19116 --- [fintech] [Thread-1] r.m.c.f.thread.ComponentCreateThread     : testo успешно создан

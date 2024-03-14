@@ -1,13 +1,13 @@
 package ru.mts.case_champ.factoryComponents.enums;
 
 public enum ComponentEnum {
-    TESTO ("testo", 10),
-    MYASO ("myaso", 1),
-    KAPUSTA ("kapusta", 1),
-    RYBA("ryba", 3),
-    YAGODY("yagody", 5),
-    TEA("tea", 2),
-    COFFEE("coffee", 2);
+    TESTO ("testo", 1000),
+    MYASO ("myaso", 1000),
+    KAPUSTA ("kapusta", 1000),
+    RYBA("ryba", 3000),
+    YAGODY("yagody", 5000),
+    TEA("tea", 2000),
+    COFFEE("coffee", 2000);
 
     private String name;
     private int millis;

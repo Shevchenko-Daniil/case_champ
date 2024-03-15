@@ -1,4 +1,4 @@
-package ru.mts.case_champ.factoryComponents.dto;
+package ru.mts.case_champ.factory_components.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

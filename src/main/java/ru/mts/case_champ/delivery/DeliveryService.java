@@ -1,10 +1,12 @@
 package ru.mts.case_champ.delivery;
 
-import ru.mts.case_champ.city.City;
-import ru.mts.case_champ.order.Order;
+import org.springframework.stereotype.Service;
+import ru.mts.case_champ.create_order.city.City;
+import ru.mts.case_champ.create_order.order.Order;
 
 import java.util.HashMap;
 
+@Service
 public class DeliveryService {
     HashMap<City, Integer> orders;
 

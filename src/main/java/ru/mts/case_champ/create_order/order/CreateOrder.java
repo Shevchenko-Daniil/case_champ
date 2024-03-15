@@ -1,7 +1,8 @@
-package ru.mts.case_champ.order;
+
+package ru.mts.case_champ.create_order.order;
 
 import org.springframework.stereotype.Service;
-import ru.mts.case_champ.city.City;
+import ru.mts.case_champ.create_order.city.City;
 import ru.mts.case_champ.cooking_products.*;
 
 import java.time.LocalDateTime;
@@ -9,11 +10,11 @@ import java.util.Random;
 
 @Service
 public class CreateOrder {
-    public static Order create(){
-        Order order=new Order();
-        Random random=new Random();
-        for(int i=0;i<Order.maxNumberOfProducts;i++){
-            switch (random.nextInt(6)){
+    public static Order create() {
+        Order order = new Order();
+        Random random = new Random();
+        for (int i = 0; i < Order.maxNumberOfProducts; i++) {
+            switch (random.nextInt(6)) {
                 case 0:
                     order.add(new Coffee());
                     break;
@@ -34,10 +35,10 @@ public class CreateOrder {
             }
         }
         order.setDateTime(LocalDateTime.now());
-        switch (random.nextInt(2)){
+        switch (random.nextInt(2)) {
             case 0:
                 order.setType(Order.DeliveryType.COURIER);
-                switch (random.nextInt(4)){
+                switch (random.nextInt(4)) {
                     case 0:
                         order.setCity(City.MOSCOW);
                         break;

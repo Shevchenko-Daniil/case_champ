@@ -1,9 +1,9 @@
-package ru.mts.case_champ.factoryComponents.controller;
+package ru.mts.case_champ.factory_components.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import ru.mts.case_champ.factoryComponents.dto.MessageDto;
-import ru.mts.case_champ.factoryComponents.service.ComponentService;
+import ru.mts.case_champ.factory_components.dto.MessageDto;
+import ru.mts.case_champ.factory_components.service.ComponentService;
 
 @RestController
 @RequestMapping("/component")

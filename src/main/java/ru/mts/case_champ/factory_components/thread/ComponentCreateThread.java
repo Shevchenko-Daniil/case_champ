@@ -1,9 +1,9 @@
-package ru.mts.case_champ.factoryComponents.thread;
+package ru.mts.case_champ.factory_components.thread;
 
 import lombok.extern.slf4j.Slf4j;
-import ru.mts.case_champ.factoryComponents.entity.Component;
-import ru.mts.case_champ.factoryComponents.enums.ComponentEnum;
-import ru.mts.case_champ.factoryComponents.jpa.ComponentJpa;
+import ru.mts.case_champ.factory_components.entity.Component;
+import ru.mts.case_champ.factory_components.enums.ComponentEnum;
+import ru.mts.case_champ.factory_components.jpa.ComponentJpa;
 
 @Slf4j
 public class ComponentCreateThread extends Thread {

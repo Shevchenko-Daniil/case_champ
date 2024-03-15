@@ -1,6 +1,6 @@
-package ru.mts.case_champ.order;
+package ru.mts.case_champ.create_order.order;
 
-import ru.mts.case_champ.city.City;
+import ru.mts.case_champ.create_order.city.City;
 import ru.mts.case_champ.cooking_products.AbstractProduct;
 
 import java.time.LocalDateTime;
@@ -10,15 +10,7 @@ import java.util.List;
 public class Order {
     private List<AbstractProduct> products = new ArrayList<>();
 
-    private final int maxNumberOfProducts = 6;
     private LocalDateTime createOrder;
-    private DeliveryType type;
-    private City city;
-
-    private enum DeliveryType {
-        COURIER, CASHDESK
-    }
-
     public static final int maxNumberOfProducts = 6;
     private LocalDateTime dateTime;
     private DeliveryType type;
@@ -46,10 +38,6 @@ public class Order {
         COURIER, CASHDESK
     }
 
-    public List<AbstractProduct> getProducts() {
-        return products;
-    }
-
     public int getMaxNumberOfProducts() {
         return maxNumberOfProducts;
     }
@@ -61,7 +49,7 @@ public class Order {
     public DeliveryType getType() {
         return type;
     }
-  
+
     public List<AbstractProduct> getProducts() {
         return products;
     }
@@ -77,7 +65,7 @@ public class Order {
     public void setCity(City city) {
         this.city = city;
     }
-  
+
     public City getCity() {
         return city;
     }

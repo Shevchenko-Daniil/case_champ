@@ -1,4 +1,4 @@
-package ru.mts.case_champ.factoryComponents.entity;
+package ru.mts.case_champ.factory_components.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;

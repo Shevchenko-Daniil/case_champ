@@ -1,4 +1,4 @@
-package ru.mts.case_champ.factoryComponents.enums;
+package ru.mts.case_champ.factory_components.enums;
 
 public enum ComponentEnum {
     TESTO ("testo", 1000),

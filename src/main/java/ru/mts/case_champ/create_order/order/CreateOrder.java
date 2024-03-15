@@ -1,7 +1,7 @@
-package ru.mts.case_champ.pr2.order;
+package ru.mts.case_champ.create_order.order;
 
 import org.springframework.stereotype.Service;
-import ru.mts.case_champ.pr2.city.City;
+import ru.mts.case_champ.create_order.city.City;
 import ru.mts.case_champ.cooking_products.*;
 
 import java.time.LocalDateTime;

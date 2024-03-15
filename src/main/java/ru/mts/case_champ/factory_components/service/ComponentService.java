@@ -1,11 +1,11 @@
-package ru.mts.case_champ.factoryComponents.service;
+package ru.mts.case_champ.factory_components.service;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.mts.case_champ.factoryComponents.enums.ComponentEnum;
-import ru.mts.case_champ.factoryComponents.jpa.ComponentJpa;
-import ru.mts.case_champ.factoryComponents.thread.ComponentCreateThread;
+import ru.mts.case_champ.factory_components.enums.ComponentEnum;
+import ru.mts.case_champ.factory_components.jpa.ComponentJpa;
+import ru.mts.case_champ.factory_components.thread.ComponentCreateThread;
 
 @Service
 @Slf4j

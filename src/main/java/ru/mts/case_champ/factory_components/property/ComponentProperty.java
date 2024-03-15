@@ -1,4 +1,4 @@
-package ru.mts.case_champ.factoryComponents.property;
+package ru.mts.case_champ.factory_components.property;
 
 import lombok.Getter;
 import lombok.Setter;

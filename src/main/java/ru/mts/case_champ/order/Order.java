@@ -9,6 +9,16 @@ import java.util.List;
 
 public class Order {
     private List<AbstractProduct> products = new ArrayList<>();
+
+    private final int maxNumberOfProducts = 6;
+    private LocalDateTime createOrder;
+    private DeliveryType type;
+    private City city;
+
+    private enum DeliveryType {
+        COURIER, CASHDESK
+    }
+
     public static final int maxNumberOfProducts = 6;
     private LocalDateTime dateTime;
     private DeliveryType type;
@@ -51,9 +61,9 @@ public class Order {
     public DeliveryType getType() {
         return type;
     }
-
-    public City getCity() {
-        return city;
+  
+    public List<AbstractProduct> getProducts() {
+        return products;
     }
 
     public void setDateTime(LocalDateTime dateTime) {
@@ -67,4 +77,9 @@ public class Order {
     public void setCity(City city) {
         this.city = city;
     }
+  
+    public City getCity() {
+        return city;
+    }
+
 }

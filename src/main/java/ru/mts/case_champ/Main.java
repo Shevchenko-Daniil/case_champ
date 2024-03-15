@@ -9,4 +9,5 @@ public class Main {
         CookProductsService testService = new CookProductsService();
         AbstractProduct testProduct = testService.cookPieWithFish();
     }
+//доставка
 }
